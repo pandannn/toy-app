@@ -1,0 +1,44 @@
+.allContainerAppbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+  box-shadow: 0 3px 3px -2px rgba(75, 75, 75, 0.2);
+  position: sticky;
+  top: 0;
+  background-color: #ffff;
+  z-index: 1;
+}
+.allContainerAppbar > h1 {
+  display: flex;
+  margin-inline-start: 7rem;
+  font-weight: 400;
+  font-size: 24px;
+}
+.ContainerhrefNav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+.hreafNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-inline-start: 1.5rem;
+}
+.hreafNav > a {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  margin: 1rem;
+}
+.btnNav {
+  margin-inline-start: auto;
+  margin-inline-end: 7rem;
+}
+.btnNav > button > svg {
+  color: #a5c926;
+  width: 20px;
+  height: auto;
+  margin: 1rem;
+}

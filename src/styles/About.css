@@ -1,0 +1,48 @@
+/* sectionOne */
+.textTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.textTop > p {
+  color: #a5c926;
+}
+.textTop > h1 {
+  font-family: "Varela Round", sans-serif;
+}
+.textTop > h4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 7rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* align-content: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.imgTop > img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+/* sectionTwo */
+.textSectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+.textSectionTwo > p {
+  color: #a5c926;
+}
+.textSectionTwo > h1 {
+  font-family: "Varela Round", sans-serif;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-left: 10rem;
+}

@@ -1,0 +1,32 @@
+.containerCatalog {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+.textNavCatalog {
+  display: flex;
+  flex-grow: 6;
+}
+.containerCard {
+  display: grid;
+  grid-template-columns: 18rem 18rem 18rem 18rem;
+  grid-template-rows: 18rem 18rem 18rem 18rem;
+  grid-column-gap: 0.5rem;
+  margin: 0;
+}
+
+.stuffedAnimalCard {
+  display: grid;
+  grid-template-rows: 26rem;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1rem;
+  margin: 0;
+}
+.woodenCard {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 26rem;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1rem;
+  margin: 0;
+}
