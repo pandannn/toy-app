@@ -8,7 +8,9 @@ import Catalog from "./pages/catalog";
 import About from "./pages/about";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Layout from "./components/Layout";
+import Product from "./components/Product";
+import ShoppingList from "./components/ShoppingList";
 
 const theme = createTheme({
   palette: {
@@ -27,18 +29,23 @@ function App() {
       <ThemeProvider theme={theme}>
         <Router>
           <Switch>
-            <Route path="/home">
-              <Navbar />
-              <Home />
-            </Route>
-            <Route path="/about">
-              <Navbar />
-              <About />
-            </Route>
-            <Route path="/catalog">
-              <Navbar />
-              <Catalog />
-            </Route>
+            <Layout>
+              <Route path="/home">
+                <Home />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/catalog">
+                <Catalog />
+              </Route>
+              <Route path="/product">
+                <Product />
+              </Route>
+              <Route path="/shoppinglist">
+                <ShoppingList />
+              </Route>
+            </Layout>
           </Switch>
         </Router>
       </ThemeProvider>

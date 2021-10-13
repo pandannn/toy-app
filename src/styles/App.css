@@ -230,6 +230,7 @@
 /* scrollSectioneight */
 .containerFlexSectionEight {
   display: flex;
+  margin-top: 6rem;
 }
 .textSubsribeSvg {
   display: flex;
@@ -281,4 +282,5 @@
   border-color: #999;
   margin-right: 2rem;
   width: 20rem;
+  color: black;
 }

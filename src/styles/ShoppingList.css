@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+.felxContainershoppingList {
+  display: flex;
+}
+.felxContainershoppingList {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.felxContainershoppingList > img {
+  width: 8rem;
+  height: auto;
+}
+.textInProductShoppingList {
+  width: auto;
+}
+.felxContainershoppingList > h1 {
+  margin-inline-start: auto;
+  margin-inline-end: 7rem;
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+  background-color: rgb(190, 190, 190);
+  width: 3rem;
+  height: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-style: solid;
+  border-color: rgb(100, 100, 100);
+  font-weight: 400;
+  font-size: 200;
+  font-family: "Varela Round", sans-serif;
+}
+.textInProductShoppingList {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.felxShoppingListbuttom {
+  display: flex;
+  justify-content: space-between;
+  margin-inline-start: 1.5rem;
+  margin-inline-end: 7.5rem;
+}
+#buttonShoppingList {
+  background-color: #a5c926;
+  border-radius: 16px;
+  margin-inline-start: 25rem;
+}

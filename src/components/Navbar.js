@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import Avatar from "@mui/material/Avatar";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -9,9 +10,11 @@ const Navbar = () => {
         <h1 href="/">ToyStore</h1>
         <div className="ContainerhrefNav">
           <div className="hreafNav">
-            <a href="/home">Home</a>
-            <a href="/catalog">Catalog</a>
-            <a href="/about">About</a>
+            <Link to="/home">Home</Link>
+            <Link to="/catalog">Catalog</Link>
+            <Link to="/about">About</Link>
+            <Link to="/product">Product</Link>
+            <Link to="/shoppinglist">Shopping list</Link>
           </div>
           <div className="btnNav">
             <Button>

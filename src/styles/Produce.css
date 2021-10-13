@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+/* ProductContainer */
+.productContainer {
+  display: flex;
+  margin-top: 5rem;
+  border-radius: 12px;
+}
+.productTextlift {
+  flex: 1;
+  padding-inline-start: 4rem;
+  padding-top: 3rem;
+}
+.productTextlift > h1 {
+  font-family: "Varela Round", sans-serif;
+}
+.productTextlift > p {
+  padding-right: 10%;
+}
+.productTextlift > h2 {
+  color: #a5c926;
+  font-family: "Varela Round", sans-serif;
+}
+.produxtImgright {
+  flex: 1;
+}
+.produxtImgright > img {
+  margin: 0;
+  width: 30rem;
+  height: auto;
+}
+.countNumberandBtn {
+  display: flex;
+  align-items: center;
+}
+.countNumberandBtn > h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  background-color: rgb(212, 212, 212);
+  margin: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 12px;
+}
+.countNumberandBtn > button {
+  background-color: #a5c926;
+  color: white;
+}
+/* productDividerProductdetails */
+.productDividerProductdetails > p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+}
+
+/* Product Details */
+.containerFelxProductDetails {
+  display: flex;
+}
+.textProductDetails {
+  flex: 1;
+  margin-right: 5rem;
+}
+.dividerProductDetail {
+  margin-left: 2rem;
+  align-items: center;
+  width: 20rem;
+  border-color: #a5c926;
+  padding-left: 1rem;
+  border-color: rgb(212, 212, 212);
+  border-style: groove;
+  margin: auto;
+  margin-top: 2rem;
+  margin-inline-end: 3rem;
+}
