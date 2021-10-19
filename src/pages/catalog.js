@@ -114,7 +114,7 @@ const catalog = () => {
               />
             ))}
           </div>
-          {/* <div className="woodenCardCatalog">
+          <div className="woodenCardCatalog">
             {woodenToys.map((wooden) => (
               <CardContent
                 name={wooden.name}
@@ -122,7 +122,7 @@ const catalog = () => {
                 img={wooden.img}
               />
             ))}
-          </div> */}
+          </div>
         </div>
       </Container>
       <Subscribe />
