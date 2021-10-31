@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Product from "./components/Product";
 import ShoppingList from "./components/ShoppingList";
+import { useState } from "react";
 
 const theme = createTheme({
   palette: {
@@ -24,26 +25,31 @@ const theme = createTheme({
 });
 
 function App() {
+  const [shoppingCart, setShoppingCart] = useState([]);
+
   return (
     <>
       <ThemeProvider theme={theme}>
         <Router>
           <Switch>
             <Layout>
-              <Route path="/index">
+              <Route exact path="/">
                 <Home />
               </Route>
               <Route path="/about">
                 <About />
               </Route>
               <Route path="/catalog">
-                <Catalog />
+                <Catalog setShoppingCart={setShoppingCart} />
               </Route>
               <Route path="/product">
                 <Product />
               </Route>
               <Route path="/shoppinglist">
-                <ShoppingList />
+                <ShoppingList
+                  shoppingCart={shoppingCart}
+                  setShoppingCart={setShoppingCart}
+                />
               </Route>
             </Layout>
           </Switch>

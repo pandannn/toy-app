@@ -1,10 +1,11 @@
 //import express
 const express = require("express");
 const { Pool } = require("pg");
+const cors = require("cors");
 
 //create new express intance
 const app = express();
-const port = 3001;
+const port = 5001;
 
 //postgres config
 const pgConfig = {
@@ -25,18 +26,40 @@ app.use(
     extended: true,
   })
 );
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
-//end-point-1
-app.get("/", (req, res) => {
-  res.send("<h1>Welcome</h1>");
-});
-
-//end point-2
+//API: Get all product
 app.get("/api/products", (req, res) => {
   pool.query("SELECT * FROM product", (err, result) => {
     if (err) throw err;
     res.status(200).json(result.rows);
   });
+});
+//API: Get all orders
+app.get("/api/orders", (req, res) => {
+  pool.query('SELECT * FROM "order"', (err, result) => {
+    if (err) throw err;
+    res.status(200).json(result.rows);
+  });
+});
+
+//handle post request
+app.post("/api/submit", (req, res) => {
+  pool.query(
+    'INSERT INTO "order"(p_name, price , total) VALUES($1, $2, $3) RETURNING oid',
+    [req.body.names, req.body.price, req.body.total],
+    (err, result) => {
+      if (err) throw err;
+      res.status(200).json({
+        message: "success",
+        id: result.rows[0].id,
+      });
+    }
+  );
 });
 
 app.listen(port, () => {
